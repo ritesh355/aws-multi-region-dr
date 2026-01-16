@@ -86,3 +86,64 @@ aws-multi-region-dr/
 ➡ **Result:** Application remained accessible via the **DR region**
 ---
 
+## 📊 RTO & RPO (Design Targets)
+
+| Metric | Value |
+|------|-------|
+| RTO (Recovery Time Objective) | ~1–2 minutes |
+| RPO (Recovery Point Objective) | Seconds (replication lag) |
+
+---
+
+## 💡 Why This Project Stands Out
+
+- Real **production-style disaster recovery design**
+- Hands-on **failure testing (not just theoretical concepts)**
+- Clean and **modular documentation**
+- Covers both **stateless (EC2) and stateful (RDS, EFS) components**
+- Strong **interview-ready cloud project**
+
+> This project simulates how **enterprise systems survive regional outages**.
+
+---
+
+## 🧠 Key Learnings
+
+- Difference between **EC2 failover vs RDS failover**
+- **DNS-based failover** using Route 53
+- Importance of **AMI-based recovery**
+- Cross-region replication **trade-offs**
+- Auto Scaling behavior during **instance and service failures**
+
+---
+
+## 🚀 Future Enhancements
+
+- Infrastructure automation using **Terraform**
+- CI/CD pipeline integration
+- **CloudWatch alarms** and notifications
+- Centralized **AWS Backup policies**
+- **S3 cross-region replication**
+
+---
+
+## 📣 About the Author
+
+**Ritesh**  
+Aspiring **Cloud & DevOps Engineer**  
+Focused on building **resilient, scalable, and secure AWS architectures**
+
+---
+
+## ⭐ For Recruiters
+
+This repository demonstrates:
+
+- Cloud architecture design skills
+- Disaster recovery planning and execution
+- Operational and troubleshooting mindset
+- Strong technical documentation practices
+
+📌 Please explore the **`/steps` directory** for detailed, step-by-step implementation guides.
+
+
