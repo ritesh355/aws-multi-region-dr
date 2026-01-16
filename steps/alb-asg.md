@@ -2,6 +2,9 @@
 
 ## 📄 Example: `steps/alb-asg.md`
 
+![](../screenshots/load2.png)
+
+
 
 # Step 2: ALB & Auto Scaling Setup
 
@@ -24,7 +27,7 @@ Ensure high availability and self-healing EC2 infrastructure.
 - Type: Instance
 - Protocol: HTTP
 - Health check path: /
-![](../screenshots/target.png)
+git pull --rebase origin main
 ![](../screenshots/trnv.png)
 ### 2️⃣ Create Application Load Balancer
 - Internet-facing
