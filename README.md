@@ -15,6 +15,44 @@ This project reflects **real-world DevOps and Cloud Engineering practices** used
 
 ---
 
+### 🔧 Architecture Components
+
+**Primary Region (ap-south-1)**
+- Application Load Balancer (ALB)
+- Auto Scaling Group (EC2 instances from AMI)
+- Amazon RDS (Primary)
+- Amazon EFS (Shared storage)
+
+**Disaster Recovery Region (us-east-1)**
+- Application Load Balancer (ALB)
+- Auto Scaling Group (EC2 from copied AMI)
+- Amazon RDS Read Replica
+- Amazon EFS backup / replicated data
+
+**Global Services**
+- Amazon Route 53 (DNS Failover & Health Checks)
+## 🔄 Disaster Recovery Flow
+
+1. User traffic enters through **Amazon Route 53**
+2. Route 53 routes traffic to **Primary ALB (ap-south-1)**
+3. Health checks continuously monitor application health
+4. On failure detection:
+   - Route 53 redirects traffic to **DR ALB (us-east-1)**
+   - Auto Scaling launches EC2 instances from copied AMI
+   - RDS Read Replica is promoted to Primary
+5. Application becomes available from DR region **without manual intervention**
+
+## 📂 Implementation Details
+
+Detailed, step-by-step implementation guides with screenshots and diagrams
+are available in the [`/steps`](./steps) directory:
+
+- EC2 & AMI creation
+- ALB & Auto Scaling setup
+- Route 53 DNS failover
+- RDS cross-region replication & promotion
+- EFS backup strategy
+
 ## 🎯 Key Objectives
 - Build **highly available infrastructure** across multiple Availability Zones and Regions
 - Implement **automatic DNS-based failover**
