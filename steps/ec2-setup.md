@@ -22,7 +22,9 @@ Launch an EC2 instance and prepare a reusable AMI for Auto Scaling and DR.
 - Security Group:
   - SSH (22)
   - HTTP (80)
-
+---
+![](screenshots/ec2mum.png)
+![](screenshots/ec2nv.png)
 ### 2️⃣ Install Application
 ```bash
 sudo yum install nginx -y
@@ -37,6 +39,9 @@ http://<ec2-public-ip>
 ### Create AMI
 - EC2--> Action --> Create Image
 - Name: primary-app-ami
+
+![](screenshots/ami.png)
+![](screenshots/amimumbai.png)
 
 ### OUTCOME
 - Application is running 
