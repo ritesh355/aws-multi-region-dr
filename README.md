@@ -1,0 +1,62 @@
+# 🚀 AWS Multi-Region Disaster Recovery Architecture (Production-Grade)
+
+## 📌 Overview
+This project demonstrates a **fully automated, production-ready Multi-Region Disaster Recovery (DR) architecture on AWS**, designed to achieve **high availability, fault tolerance, and regional resilience** for a web application.
+
+The solution uses **AWS-native services** such as **EC2, Application Load Balancer (ALB), Auto Scaling, Route 53, RDS Read Replica, and EFS backups** to ensure **automatic failover with minimal downtime and data loss**.
+
+This project reflects **real-world DevOps and Cloud Engineering practices** used in enterprise environments.
+
+---
+
+## 🏗️ Architecture Diagram
+
+![Multi-Region DR Architecture](architecture/dr-architecture.png)
+
+---
+
+## 🎯 Key Objectives
+- Build **highly available infrastructure** across multiple Availability Zones and Regions
+- Implement **automatic DNS-based failover**
+- Enable **stateless application recovery** using AMIs and Auto Scaling
+- Protect **stateful data (RDS & EFS)** against regional failures
+- Validate DR using **real failure simulations**
+
+---
+
+## 🛠️ AWS Services Used
+
+| Category | Services |
+|--------|----------|
+| Compute | EC2, AMI, Auto Scaling |
+| Networking | VPC, ALB, Route 53 |
+| Storage | EBS Snapshots, EFS |
+| Database | RDS (Primary + Cross-Region Read Replica) |
+| Security | IAM, Security Groups |
+| Monitoring | Route 53 Health Checks |
+
+---
+
+## 🌍 Regions Used
+- **Primary Region:** ap-south-1  
+- **Disaster Recovery Region:** us-east-1  
+
+---
+
+## 📁 Project Structure
+
+```text
+aws-multi-region-dr/
+│
+├── architecture/
+│   └── dr-architecture.png
+│
+├── steps/
+│   ├── ec2-setup.md
+│   ├── alb-asg.md
+│   ├── route53.md
+│   └── rds-dr.md
+│
+├── screenshots/
+│
+└── README.md
