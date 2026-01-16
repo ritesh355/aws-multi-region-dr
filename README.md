@@ -183,6 +183,6 @@ This repository demonstrates:
 - Operational and troubleshooting mindset
 - Strong technical documentation practices
 
-📌 Please explore the **`/steps` directory** for detailed, step-by-step implementation guides.
+📌 Please explore the **`/steps` directory** [`/steps`](./steps) for detailed, step-by-step implementation guides.
 
 
