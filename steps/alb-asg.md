@@ -24,12 +24,14 @@ Ensure high availability and self-healing EC2 infrastructure.
 - Type: Instance
 - Protocol: HTTP
 - Health check path: /
-
+![](../screenshots/target.png)
+![](../screenshots/trnv.png)
 ### 2️⃣ Create Application Load Balancer
 - Internet-facing
 - Select ALL AZs (Best Practice)
 - Attach target group
-
+![](../screenshots/loaddr.png)
+![](../screenshots/loadpr.png)
 ### 3️⃣ Create Launch Template
 - Use AMI from Step 1
 - Select correct VPC Security Group
@@ -39,7 +41,8 @@ Ensure high availability and self-healing EC2 infrastructure.
 - Min: 1
 - Max: 4
 - Attach ALB
-
+![](../screenshots/primaryautoscalling.png)
+![](../screenshots/autonv.png)
 ## Outcome
 - EC2 instances auto-heal
 - Application always available
