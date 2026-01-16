@@ -18,7 +18,7 @@ Automatically route traffic to DR region during failure.
 Domain:
 riteshdev.me
 
-
+![](../screenshots/cname.png)
 ### 2️⃣ Create Health Check
 - Endpoint: Primary ALB
 - Path: /
