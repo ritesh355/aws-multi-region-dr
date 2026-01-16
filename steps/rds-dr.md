@@ -1,5 +1,8 @@
 # Step 4: RDS Disaster Recovery
+![](../screenshots/read2.png)
 
+A cross-region read replica is maintained and promoted during
+regional failure.
 ## Objective
 Protect application data using cross-region replication.
 
