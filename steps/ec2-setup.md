@@ -1,5 +1,9 @@
 # Step 1: EC2 & AMI Setup (Primary Region)
 
+![EC2 Setup](../architecture/ec22.png)
+
+In this step, we launch an EC2 instance in the primary region
+(ap-south-1) and deploy an NGINX application.
 ## Objective
 Launch an EC2 instance and prepare a reusable AMI for Auto Scaling and DR.
 
