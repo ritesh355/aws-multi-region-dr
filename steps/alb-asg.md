@@ -2,7 +2,7 @@
 
 ## 📄 Example: `steps/alb-asg.md`
 
-```md
+
 # Step 2: ALB & Auto Scaling Setup
 
 ## Objective
