@@ -17,10 +17,12 @@ Protect application data using cross-region replication.
 - Region: ap-south-1
 - Engine: MySQL
 - Optional: Multi-AZ
+- ![](../screenshots/read1.png)
 
 ### 2️⃣ Create Read Replica
 - Region: us-east-1
 - Continuous replication
+- ![](../screenshots/read2.png)
 
 ### 3️⃣ Promote Replica (DR Test)
 - RDS → Promote read replica
