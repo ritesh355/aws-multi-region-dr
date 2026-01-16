@@ -1,5 +1,5 @@
 # Step 4: RDS Disaster Recovery
-![](../screenshots/read.png)
+![](../screenshots/rds.png)
 
 A cross-region read replica is maintained and promoted during
 regional failure.
