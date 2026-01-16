@@ -16,6 +16,7 @@ This project reflects **real-world DevOps and Cloud Engineering practices** used
 ---
 
 ### 🔧 Architecture Components
+![Multi-Region DR Architecture](architecture/im.png)
 
 **Primary Region (ap-south-1)**
 - Application Load Balancer (ALB)
