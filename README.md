@@ -60,3 +60,29 @@ aws-multi-region-dr/
 ├── screenshots/
 │
 └── README.md
+```
+## 🔄 Disaster Recovery Flow
+
+- User traffic enters through **Route 53**
+- Primary **Application Load Balancer (ALB)** serves traffic from **ap-south-1**
+- Route 53 **continuously monitors application health**
+- On failure:
+  - Traffic is **automatically routed to the DR region**
+  - Auto Scaling **launches EC2 instances from the copied AMI**
+  - **RDS Read Replica is promoted** to primary database
+
+✅ **No manual intervention required**
+
+---
+
+## 🧪 Failure Scenarios Tested
+
+- Primary EC2 instance stopped
+- Application (NGINX) service stopped
+- Auto Scaling instance termination
+- Route 53 failover validation
+- RDS Read Replica promotion
+
+➡ **Result:** Application remained accessible via the **DR region**
+---
+
