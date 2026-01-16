@@ -1,5 +1,8 @@
 # Step 3: Route 53 Failover Routing
+![Route 53 Failover](../screenshots/533.png)
 
+Route 53 continuously monitors the health of the primary ALB
+and redirects traffic to the DR region during failure.
 ## Objective
 Automatically route traffic to DR region during failure.
 
